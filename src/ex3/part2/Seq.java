@@ -14,14 +14,13 @@ import java.util.function.Consumer;
  * it is simply a class "stored" in another, with no link what so ever with the non-static
  * states of its outer class.
  * 
- * Here, no class outside of the Seq interface will implement it, 
- * so we can effectively encapsulate the two classes by making them non-static nested classes.
- * Despite them being public, we won't be able to access them outside of the Seq interface,
- * because they would have to be linked to an outer object implementing Seq.
+ * When hosted by an interface, nested classes are static by default.
+ * Indeed, Seq cannot be directly instantiated, and has no non-static fields, so having
+ * a non-static nested class would not present any significant benefit. 
  */
 public interface Seq {
 	
-	// the forEach method, to perform action for each elements of the sequence
+	// the forEach method, to perform action for each element of the sequence
 	void forEach(Consumer<Object> cons);
 	
 	/* Question 7.

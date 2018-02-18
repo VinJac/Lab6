@@ -8,6 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		Seq seq = Seq.nil(); 
 		Seq seq2 = seq.prepend("world").prepend(3); 
-		seq2.forEach(System.out :: println); 
+		
+		seq2.forEach(System.out::println); 
 	}
 }
