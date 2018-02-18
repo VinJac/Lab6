@@ -1,4 +1,7 @@
 package ex3.part1;
+/*
+ * PART 1: Before Cons and Nil being inner classes
+ */
 
 import java.util.function.Consumer;
 
@@ -7,9 +10,6 @@ import java.util.function.Consumer;
  * indicates the end of the sequence.
  */
 public class Nil implements Seq {
-	public Nil() {
-		
-	}
 	
 	/* Question 3.
 	 * This will be called when we will arrive at the end of the sequence

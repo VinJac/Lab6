@@ -1,4 +1,7 @@
 package ex3.part1;
+/*
+ * PART 1: Before Cons and Nil being nested classes
+ */
 
 import java.util.Objects;
 import java.util.function.Consumer;
